@@ -15,7 +15,7 @@ var https = require("https"),
         title: title,
         blockedIp: blockedIp
     } = require("./config.json"),
-    proxy = new(require("./lib/smoke"))(prefix, {
+    proxy = new(require("./lib/solar"))(prefix, {
         hostBlock: blockedHosts,
         docTitle: title
     }),
